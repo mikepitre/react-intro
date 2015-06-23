@@ -5,15 +5,15 @@ var Navigation = React.createClass({
   render: function () {
     return (
       <nav>
-        <p className='btn btn-primary'>Home</p>
-        <p className='btn btn-default'>Posts</p>
+        <p onClick={this.homeCLicked} className='btn btn-primary'>Home</p>
+        <p onClick={this.postsClicked} className='btn btn-default'>Posts</p>
       </nav>
     );
   },
   homeClicked: function () {
     window.location.href = '/';
   },
-  postClicked: function () {
+  postsClicked: function () {
     window.location.href = '/posts';
   }
 });
